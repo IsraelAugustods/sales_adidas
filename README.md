@@ -101,7 +101,7 @@ Com base no teste, concluo que **o faturamento médio da categoria Women's Appar
 
 Este estudo teve como objetivo principal responder a perguntas de negócio e gerar insights a partir dos dados. Com uma base de dados rica como esta, muitos insights podem ser extraídos. Trouxe aqui quatro dos principais que considerei mais relevantes para esta apresentação. Além disso, incluí algumas análises estatísticas para validar as informações de forma mais precisa.
 
-Alguns insights e detalhes adicionais ficaram de fora desta apresentação. Para acessar o projeto completo, confira neste [link]().
+Alguns insights e detalhes adicionais ficaram de fora desta apresentação. Para acessar o projeto completo, confira neste [link](https://docs.google.com/spreadsheets/d/15_zfHNMMUMyUoOAIOYxoutmLrqxe_eggvPRvByrEGNc/edit?usp=sharing).
 
 Vale destacar que futuras análises podem ser realizadas, como a aplicação de modelos de **machine learning** para prever o faturamento em anos futuros.
 
