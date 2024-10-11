@@ -2,7 +2,7 @@
 # Vendas Adidas 
 
 <p align="center">
-  <img alt="data" width="50%" src="https://github.com/user-attachments/assets/b22b1139-b7be-423a-8144-8c0b717ad16a">
+  <img alt="adidas" width="50%" src="https://github.com/user-attachments/assets/b22b1139-b7be-423a-8144-8c0b717ad16a">
 </p>
 
 ## Objetivo do Estudo
@@ -36,7 +36,7 @@ Neste gráfico, temos o faturamento das vendas por tipo de produto, dividido em 
 Podemos observar que, em todas as regiões, a categoria de produto com o maior faturamento é a Men's Street Footwear.
 
 <p align="center">
-  <img alt="g1" width="70%" src="https://github.com/user-attachments/assets/302a5d11-58fe-4388-801f-78f58a1cbdb5">
+  <img alt="g2" width="70%" src="https://github.com/user-attachments/assets/302a5d11-58fe-4388-801f-78f58a1cbdb5">
 </p>
 
 ### Faturamento por Meses
@@ -46,7 +46,7 @@ Neste gráfico, temos duas linhas do tempo relacionadas ao faturamento, correspo
 Em 2020, o mês com maior faturamento foi abril, enquanto em 2021 foi julho, seguido de perto por dezembro.
 
 <p align="center">
-  <img alt="g1" width="70%" src="https://github.com/user-attachments/assets/699fb3b3-0116-4948-af56-4ba19905525d">
+  <img alt="g3" width="70%" src="https://github.com/user-attachments/assets/699fb3b3-0116-4948-af56-4ba19905525d">
 </p>
 
 ### Com qual revendedor a Adidas teve o maior lucro operacional, em média?
@@ -54,48 +54,66 @@ Em 2020, o mês com maior faturamento foi abril, enquanto em 2021 foi julho, seg
 Neste gráfico de barras, temos o valor médio do lucro operacional por revendedor. Observa-se que o revendedor com o qual a Adidas obteve maior lucro foi o Walmart, seguido pelo Sports Direct.
 
 <p align="center">
-  <img alt="g1" width="70%" src="https://github.com/user-attachments/assets/b265bda5-0b79-4319-80b3-c1670b413dd0">
+  <img alt="g4" width="70%" src="https://github.com/user-attachments/assets/b265bda5-0b79-4319-80b3-c1670b413dd0">
 </p>
 
 ## Estatística
 
-### Existe diferença no faturamento entre os produtos "Women's Apparel" e "Men's Apparel", na média?
+### Existe diferença no faturamento médio entre os produtos "Women's Apparel" e "Men's Apparel"?
 
 <p align="center">
-  <img alt="t1" width="35%" src="https://github.com/user-attachments/assets/cc19e76a-d74f-4996-90d8-a94d13e4ac89">
+  <img alt="j1" width="35%" src="https://github.com/user-attachments/assets/cc19e76a-d74f-4996-90d8-a94d13e4ac89">
 </p>
 
-Ao analisar a tabela acima, parece que existe uma diferença clara na média dos faturamentos entre as duas categorias de produto. No entanto, eu precisei realizar uma análise estatística para confirmar essa suposição.
+Ao observar a tabela acima, percebe-se uma aparente diferença na média de faturamento entre as duas categorias de produto. No entanto, realizei uma análise estatística para verificar se essa diferença é estatisticamente significativa.
 
-Como meu objetivo é descobrir se, na média, existe diferença entre o faturamento entre as categorias Men's Apparel e Women's Apparel, apliquei o **teste t**. Esse teste possui alguns pressupostos, como a **distribuição normal dos dados** e a **homogeneidade das variâncias**. Dependendo do resultado desses pressupostos, diferentes variações do teste t podem ser aplicadas.
+Para investigar se há diferença no faturamento médio entre "Men's Apparel" e "Women's Apparel", apliquei o **teste t**. Esse teste possui pressupostos, como a **distribuição normal dos dados** e a **homogeneidade das variâncias**, e diferentes variações podem ser usadas dependendo dos resultados desses pressupostos.
 
-Primeiro, verifiquei a normalidade dos dados aplicando o teste de **Kolmogorov-Smirnov**, e obtive o seguinte resultado:
+Primeiro, verifiquei a normalidade dos dados com o **teste de Kolmogorov-Smirnov**, obtendo o seguinte resultado:
 
 <p align="center">
-  <img alt="r1" width="50%" src="https://github.com/user-attachments/assets/5e9cf654-074c-40d6-9090-ac9b0f9d3f88">
+  <img alt="j2" width="35%" src="https://github.com/user-attachments/assets/5e9cf654-074c-40d6-9090-ac9b0f9d3f88">
 </p>
 
-Com base nessa tabela, concluo que os dados **não possuem distribuição normal**, já que o p-valor foi menor que 0,05, o que me levou a rejeitar a hipótese nula (que os dados são normais).
+Conforme a tabela, os dados **não seguem uma distribuição normal**, pois o p-valor foi menor que 0,05, levando-me a rejeitar a hipótese nula de normalidade.
 
-Escolhi o teste de **Kolmogorov-Smirnov** devido à grande quantidade de dados. Caso eu estivesse trabalhando com menos amostras, o **teste de Shapiro-Wilk** seria mais adequado.
+Escolhi o teste de **Kolmogorov-Smirnov** devido ao tamanho da amostra. Para amostras menores, o **teste de Shapiro-Wilk** seria mais apropriado.
 
-Em seguida, conferi a **homogeneidade das variâncias** utilizando o **teste de Levene**, e obtive o seguinte resultado:
+Em seguida, testei a **homogeneidade das variâncias** com o **teste de Levene**, e o resultado foi:
 
 <p align="center">
-  <img alt="r3" width="50%" src="https://github.com/user-attachments/assets/80e0dab3-ab55-4943-b44d-9608498e8716">
+  <img alt="j3" width="35%" src="https://github.com/user-attachments/assets/80e0dab3-ab55-4943-b44d-9608498e8716">
 </p>
 
-O teste revelou que as variâncias dos dois grupos **não é homogenia**, já que o p-valor foi menor que 0,05, o que me levou a rejeitar a hipótese nula (de que há homogeneidade nas variâncias).
+O teste indicou que as variâncias dos dois grupos **não são homogêneas**, pois o p-valor também foi menor que 0,05, rejeitando a hipótese nula de homogeneidade.
 
-Gostaria de salientar que apliquei esses testes em **amostras independentes**, ou seja, estou comparando dois grupos distintos: **Data Scientists** e **Data Analysts**.
+É importante destacar que as amostras são **independentes**, ou seja, estou comparando dois grupos distintos: **Women's Apparel** e **Men's Apparel**.
 
-Diante dos resultados (distribuição não normal dos dado e  variâncias diferentes), optei por utilizar o **U de Mann-Whitney**, que é um teste não paramétrico utilizado para comparar duas amostras independentes e determinar se suas distribuições são significativamente diferentes. Ele é uma alternativa ao teste t para amostras independentes, quando os dados não atendem aos pressupostos de normalidade. Devido a esse 
+Diante desses resultados (dados não normais e variâncias diferentes), utilizei o **teste U de Mann-Whitney**, uma alternativa não paramétrica ao teste t para amostras independentes que não atendem aos pressupostos de normalidade. O resultado foi o seguinte:
 
 <p align="center">
-  <img alt="r4" width="50%" src="https://github.com/user-attachments/assets/82c1c0e4-105c-44f7-8123-7baa2df9f5d5">
+  <img alt="j4" width="35%" src="https://github.com/user-attachments/assets/bde355e8-0c21-47d8-8aba-8360988a3e14">
 </p>
 
-Com isso, concluo que **os cientistas de dados ganham mais que os analistas de dados**, em média, nesse conjunto de dados. O p-valor do **teste t de Welch** foi menor que 0,05, o que me levou a rejeitar a hipótese nula (de que os cientistas de dados ganham menos ou igual aos analistas de dados).
-
+Com base no teste, concluo que **o faturamento médio da categoria Women's Apparel é maior que o da Men's Apparel**. O p-valor do **U de Mann-Whitney** foi menor que 0,05, rejeitando a hipótese nula de que não há diferença significativa entre os faturamentos médios dessas categorias.
 
 ## Considerações finais
+
+Este estudo teve como objetivo principal responder a perguntas de negócio e gerar insights a partir dos dados. Com uma base de dados rica como esta, muitos insights podem ser extraídos. Trouxe aqui quatro dos principais que considerei mais relevantes para esta apresentação. Além disso, incluí algumas análises estatísticas para validar as informações de forma mais precisa.
+
+Alguns insights e detalhes adicionais ficaram de fora desta apresentação. Para acessar o projeto completo, confira neste [link]().
+
+Vale destacar que futuras análises podem ser realizadas, como a aplicação de modelos de **machine learning** para prever o faturamento em anos futuros.
+
+Espero que tenham gostado do meu trabalho! Estou sempre aberto a sugestões e melhorias.
+
+Entre em contato comigo pelo:
+
+💼 [LinkedIn](https://www.linkedin.com/in/israelaugustoalmeida/)
+
+E também acesse meu portfólio para conferir outros projetos:
+
+🖥️ [Portfólio](https://sites.google.com/view/portfolioisraelaugusto/in%C3%ADcio).
+
+Obrigado!
+
