@@ -33,7 +33,7 @@ Este gráfico de funil mostra o número de pedidos realizados pelos revendedores
 
 Neste gráfico, temos o faturamento das vendas por tipo de produto, dividido em seis categorias: Men's Apparel, Women's Apparel, Men's Athletic Footwear, Women's Athletic Footwear, Men's Street Footwear e Women's Street Footwear. Além disso, os dados estão filtrados por quatro regiões: Midwest, Northeast, South, Southeast e West. 
 
-Podemos observar que, em todas as regiões, a categoria de produto com o maior faturamento é a Men's Street Footwear.
+Podemos observar que, em quase todas as regiões, a categoria de produto com o maior faturamento é a Men's Street Footwear.
 
 <p align="center">
   <img alt="g2" width="70%" src="https://github.com/user-attachments/assets/302a5d11-58fe-4388-801f-78f58a1cbdb5">
